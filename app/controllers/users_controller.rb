@@ -25,6 +25,8 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
+    # because we said remote true on index.html
+    # next up is views/users/new.js.erb
   end
 
   # GET /users/1/edit

@@ -1,5 +1,6 @@
 <h1>Listing users</h1>
 <button id="user-count">Count Users</button>
+<!-- form id to attach our form partial when we click on new user -->
 <div id="form"></div>
 <table id="users">
   <%= render 'users' %>
@@ -7,4 +8,5 @@
 
 <br />
 
+<!-- this link is going to do an ajax call to users#new -->
 <%= link_to 'New User', new_user_path, remote: true %>

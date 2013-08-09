@@ -1,2 +1,7 @@
+// renders the form partial from _form.html.erb
+// pass in the j escape_javascript(javascript)
+// Escapes carriage returns and single and double quotes for JavaScript segments.
+// prevents execution of javascript on the form
+
 $('#form').hide();
 $('#users').html('<%=j render "users" %>').show();
