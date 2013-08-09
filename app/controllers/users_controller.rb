@@ -2,12 +2,11 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
-    end
+    @users = User.page params[:page]
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.json { render json: @users }
+    # end
   end
 
   # GET /users/1
@@ -25,7 +24,11 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
+<<<<<<< HEAD
     # because we said remote true on index.html
+=======
+    # because we said remote: true in index.html
+>>>>>>> 8d656bc421221b97bd229413d1a4051dbfff4b0b
     # next up is views/users/new.js.erb
   end
 

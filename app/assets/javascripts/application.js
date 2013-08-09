@@ -11,5 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+// unobtrusive javascript that we need for remote: true
 //= require jquery_ujs
 //= require app

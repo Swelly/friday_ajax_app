@@ -5,8 +5,14 @@
 <table id="users">
   <%= render 'users' %>
 </table>
-
+<div id="pages">
+  <%= paginate @users, remote: true %>
+</div>
 <br />
 
+<<<<<<< HEAD
 <!-- this link is going to do an ajax call to users#new -->
+=======
+<!-- this link is going to do an ajax call to 'users#new' -->
+>>>>>>> 8d656bc421221b97bd229413d1a4051dbfff4b0b
 <%= link_to 'New User', new_user_path, remote: true %>
